@@ -12,7 +12,7 @@ while True:
         cv2.rectangle(d_image, (x1, y1), (x1 + w1, y1 + h1), (255, 0, 0))
     cv2.imshow('img', d_image)
     h = cv2.waitKey(40) & 0xff
-    if h == 40:
+    if h == 27:
         break
 b.release()
-cv2.destroyAllWindow()
+cv2.destroyAllWindows()
